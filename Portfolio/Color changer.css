@@ -1,0 +1,923 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+	max-width: 1400px;
+    margin: auto;
+	padding: 0;
+    background: linear-gradient( #F5E4D7 3494px, #2C2627 1700px);
+}
+/*Header bar*/
+header{
+    max-width:none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: 0.3s;
+    background-color: #F5E4D7;
+    width: 1400px;
+    height: 94px;
+    animation: change-color 3494px forwards;
+}
+.navbar-color{
+    background-color: #2C2627;
+}
+.menu-color{
+    color: #F5E4D7;
+}
+header a{
+	color: #2C2627;
+}
+img{
+	position: relative;
+    width: 47px;
+    height: 39px;
+    left: 80px;
+    top: 28px;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li a{
+    position: absolute;
+    top: 36px;
+    font-family: 'Montserrat';
+    font-weight: 370;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2C2627;
+}
+ul li:first-child a{
+    cursor: pointer;
+    left: 695px;
+    font-weight: 700;
+    color: #028979;
+}
+ul li:nth-child(2) a{
+    cursor: pointer;
+    left: 786px;
+}
+ul li:nth-child(3) a{
+    cursor: pointer;
+    left: 877px;
+}
+ul li:nth-child(4) a{
+    cursor: pointer;
+    left: 990px;
+}
+ul li:last-child a{
+    cursor: pointer;
+    left: 1100px;
+}
+
+.circle_border{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 4.5px;
+    left: 4px;
+    border-radius: 50%;
+    border: 1px solid #F5E4D7;
+    -webkit-animation: circle 5s linear infinite;
+    animation: circle 5s linear infinite;
+    background-color: currentColor;
+}
+.dark_mode{
+	position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    left: 1225px;
+    top: 26px;
+    border: 1px solid #2C2627;
+    background: #2C2627;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px #028979;
+    overflow: hidden;
+    -webkit-animation: circle 5s linear infinite;
+    animation: circle 5s linear infinite;
+}
+.color_changer{
+	position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    left: 1291px;
+    top: 26px;
+    border: 1px solid #2C2627;
+    background: #2C2627;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px #028979;
+    overflow: hidden;
+    -webkit-animation: circle 5s linear infinite;
+    animation: circle 5s linear infinite;
+}
+.dark_mode svg{
+	position: absolute;
+    width: 23.12px;
+    height: 23.77px;
+    top: 2.24px;
+    left: 2px;
+    right: 2.88px;
+    bottom: 2px;
+}
+.color_changer svg{
+	position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+@-webkit-keyframes circle{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes circle{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/*Aside Menu*/
+/*.menu_switcher{
+    position: absolute;
+    left: 1355px;
+    top: 196px;
+    background: #028979;
+    box-shadow: inset 0px 0px 7px #000000;
+}
+aside div a{
+    position: absolute;
+    width: 92px;
+    height: 28px;
+    left: 1366px;
+    background: #2C2627;
+    border-radius: 46px;
+}
+aside div a:first-child{
+    top: 233px;
+}
+aside div a:nth-child(2){
+    top: 303px;
+}
+aside div a:nth-child(3){
+    top: 373px;
+}
+aside div a:nth-child(4){
+    top: 447px;
+}
+aside div a:last-child{
+    top: 521px;
+}
+
+aside div a p{
+    margin: 0;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #F5E4D7;
+}
+aside div a:first-child p{
+    left: 24px;
+    top: 6px;
+}
+aside div a:nth-child(2) p{
+    left: 24px;
+    top: 6px;
+}
+aside div a:nth-child(3) p{
+    left: 16px;
+    top: 6px;
+}
+aside div a:nth-child(4) p{
+    left: 17px;
+    top: 6px;
+}
+aside div a:last-child p{
+    left: 18px;
+    top: 6px;
+}*/
+
+/*Hero Section*/
+section{
+    position: relative;
+    height: 800px;
+    margin-bottom: 50px;
+}
+
+#Hero div h3:first-child{
+    position: absolute;
+    margin: 0;
+    left: 78px;
+    top: 105px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2C2627;
+}
+#Hero div h1:nth-child(2){
+    position: absolute;
+    margin: 0;
+    left: 73px;
+    top: 141px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 104.9%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #028979;
+}
+#Hero h3:nth-child(3){
+    position: absolute;
+    margin: 0;
+    left: 80px;
+    top: 328px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2C2627;
+}
+.Hero div:nth-child(6){
+    position: absolute;
+    width: 315px;
+    height: 419px;
+    left: 999px;
+    top: 42px;
+    background: #028979;
+    border-radius: 18px;
+}
+.Hero img:last-child{
+    position: absolute;
+    width: 315px;
+    height: 419px;
+    left: 950px;
+    top: 15px;
+    background-color: #2C2627;
+    box-shadow: 39px 28px 29px 9px rgba(0, 0, 0, 0.32);
+    border-radius: 18px;
+}
+.portfolio_button{
+    position: absolute;
+    cursor: pointer;
+    width: 159px;
+    height: 54px;
+    left: 80px;
+    top: 391px;
+    border: 1px solid #2C2627;
+    background: #2C2627;
+    box-shadow: 0px 0px 15px #2C2627;
+    border-radius: 60px;
+}
+.portfolio_button span{
+    position: absolute;
+    width: 77px;
+    height: 21px;
+    left: 40px;
+    top: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.contact_button{
+    position: absolute;
+    cursor: pointer;
+    width: 159px;
+    height: 54px;
+    left: 254px;
+    top: 391px;
+    border: 1px solid #028979;
+    background: #028979;
+    box-shadow: 0px 0px 15px #028979;
+    border-radius: 60px;
+}
+.contact_button span{
+    position: absolute;
+    width: 77px;
+    height: 21px;
+    left: 40px;
+    top: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+#Hero div:nth-child(2) h3{
+    position: absolute;
+    left: 958px;
+    top: 483px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #028979;
+}
+.instagram{
+    position: absolute;
+    cursor: pointer;
+    width: 39.65px;
+    height: 39.65px;
+    left: 928px;
+    top: 530px;
+}
+.linkedin{
+    position: absolute;
+    cursor: pointer;
+    width: 39.65px;
+    height: 39.65px;
+    left: 976px;
+    top: 530px;
+}
+.facebook{
+    position: absolute;
+    cursor: pointer;
+    width: 39.65px;
+    height: 39.65px;
+    left: 1024px;
+    top: 530px;
+}
+.behance{
+    position: absolute;
+    cursor: pointer;
+    width: 39.65px;
+    height: 39.65px;
+    left: 1072px;
+    top: 530px;
+}
+.dribbble{
+    position: absolute;
+    cursor: pointer;
+    width: 39.65px;
+    height: 39.65px;
+    left: 1120px;
+    top: 530px;
+}
+.down_button{
+    position: relative;
+    cursor: pointer;
+    width: 61px;
+    height: 61px;
+    left: 669.5px;
+    top: 617px;
+    border: 1px solid #028979;
+    border-radius: 50%;
+    background: #028979;
+    box-shadow: 0px 0px 10px #028979;
+}
+.down_button svg{
+    position: absolute;
+    top: 25px;
+    left: 17px;
+}
+
+/*About*/
+.About h3{
+    position: absolute;
+    margin: 0;
+    width: 152px;
+    height: 37px;
+    left: 80px;
+    top: 199px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2C2627;
+}
+.About p{
+    position: absolute;
+    margin: 0;
+    width: 603px;
+    height: 325px;
+    left: 80px;
+    top: 261px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #2C2627;
+}
+.About div div div{
+    position: absolute;
+    width: 368px;
+    height: 490px;
+    left: 946px;
+    top: 174.52px;
+    background: #028979;
+    border-radius: 18px;
+}
+.About div div img{
+    position: absolute;
+    width: 368px;
+    height: 490px;
+    left: 889px;
+    top: 143px;
+    background-color: #2C2627;
+    box-shadow: 39px 28px 29px 9px rgba(0, 0, 0, 0.32);
+    border-radius: 18px;
+}
+.Read_More_button{
+    position: absolute;
+    cursor: pointer;
+    width: 159px;
+    height: 54px;
+    left: 80px;
+    top: 611px;
+    border: 1px solid #028979;
+    background: #028979;
+    box-shadow: 0px 0px 15px #028979;
+    border-radius: 60px;
+}
+.Read_More_button span{
+    position: absolute;
+    left: 31px;
+    top: 17px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.About .down_button{
+    position: absolute;
+    top: 651px;
+}
+
+/*Portfolio*/
+.Portfolio h1{
+    position: absolute;
+    margin: 0;
+    left: 77px;
+    top: 43px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: 0.02em;
+    color: #028979;
+}
+.Portfolio h3{
+    position: absolute;
+    margin: 0;
+    width: 700px;
+    height: 31px;
+    left: 80px;
+    top: 111px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2C2627;
+}
+.Portfolio .line{
+    position: absolute;
+    width: 130px;
+    height: 0px;
+    left: 406px;
+    top: 73px;
+    background: #028979;
+    border: 3px solid #028979;
+    border-radius: 10px;
+}
+.my_work div{
+    position: absolute;
+    width: 290px;
+    height: 380px;
+    top: 220px;
+    background: #C4C4C4;
+    border-radius: 15px;
+}
+.my_work div:first-child{
+    position: absolute;
+    left: 80px;
+}
+.my_work div:nth-child(2){
+    position: absolute;
+    left: 401px;
+}
+.my_work div:nth-child(3){
+    position: absolute;
+    left: 722px;
+}
+.my_work div:last-child{
+    position: absolute;
+    left: 1043px;
+}
+
+.my_work div div{
+    position: absolute;
+    width: 290px;
+    height: 72px;
+    background: #1E1E1E;
+    border-radius: 0px 0px 15px 15px;    
+}
+.my_work div:first-child div{
+    position: absolute;
+    left: 0px;
+    top: 308px; 
+}
+.my_work div:nth-child(2) div{
+    position: absolute;
+    left: 0px;
+    top: 308px;
+}
+.my_work div:nth-child(3) div{
+    position: absolute;
+    left: 0px;
+    top: 308px;
+}
+.my_work div:last-child div{
+    position: absolute;
+    left: 0px;
+    top: 308px;
+}
+
+.my_work  div div .line{
+    position: absolute;
+    width: 36px;
+    height: 0px;
+    left: 15px;
+    top: 23px;
+    border: 2px solid #028979;
+    border-radius: 10px 0px 0px 10px;  
+}
+.my_work  div div h3{
+    position: absolute;
+    width: 160px;
+    height: 27px;
+    left: 56px;
+    top: 9px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #028979;
+}
+.my_work  div div h5{
+    position: absolute;
+    margin: 0;
+    width: 200px;
+    height: 20px;
+    left: 15px;
+    top: 41px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.first_circle{
+    position: absolute;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    left: 669px;
+    top: 649px;
+    background: #2C2627;
+    border-radius: 50%;
+}
+.second_circle{
+    position: absolute;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    left: 699px;
+    top: 649px;
+    background: rgba(44, 38, 39, 0.5);
+    border-radius: 50%;
+}
+.third_circle{
+    position: absolute;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    left: 729px;
+    top: 649px;
+    background: rgba(44, 38, 39, 0.5);
+    border-radius: 50%;
+}
+
+.left_button{
+    position: absolute;
+    cursor: pointer;
+    width: 61px;
+    height: 61px;
+    left: 1201px;
+    top: 43px;
+    border: 4px solid #028979;
+    border-radius: 50%;
+    background: #F5E4D7;
+}
+.left_button svg{
+    position: absolute;
+    left: 17.5px;
+    top: 14.5px;
+}
+.right_button{
+    position: absolute;
+    cursor: pointer;
+    width: 61px;
+    height: 61px;
+    left: 1271px;
+    top: 43px;
+    border: 1px solid #028979;
+    border-radius: 50%;
+    background: #028979;
+    box-shadow: 0px 0px 10px #028979;
+}
+.right_button svg{
+    position: absolute;
+    left: 24px;
+    top: 18.5px;
+}
+.Portfolio .down_button{
+    position: absolute;
+    left: 677px;
+    top: 711px;
+}
+
+/* Services */
+.services h2{
+    position: absolute;
+    margin: 0;
+    left: 523px;
+    top: 29px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #028979;
+}
+.services h5{
+    position: absolute;
+    margin: 0;
+    width: 909px;
+    height: 58px;
+    left: 263px;
+    top: 141px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2C2627;
+}
+.services .line{
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    left: 617px;
+    top: 112.5px;
+    border: 3px solid #028979;
+    border-radius: 10px;
+}
+
+.skills div:first-child{
+    position: absolute;
+    width: 362px;
+    height: 210px;
+    background: #2C2627;
+    border-radius: 25px;
+    left: 156px;
+    top: 224px;
+}
+.skills div:nth-child(2){
+    position: absolute;
+    width: 362px;
+    height: 210px;
+    background: #2C2627;
+    border-radius: 25px;
+    left: 536px;
+    top: 224px;
+}
+.skills div:nth-child(3){
+    position: absolute;
+    width: 362px;
+    height: 210px;
+    background: #2C2627;
+    border-radius: 25px;
+    left: 916px;
+    top: 224px;
+}
+.skills div:nth-child(4){
+    position: absolute;
+    width: 362px;
+    height: 210px;
+    background: #2C2627;
+    border-radius: 25px;
+    left: 156px;
+    top: 454px;
+}
+.skills div:nth-child(5){
+    position: absolute;
+    width: 362px;
+    height: 210px;
+    background: #2C2627;
+    border-radius: 25px;
+    left: 536px;
+    top: 454px;
+}
+.skills div:last-child{
+    position: absolute;
+    width: 362px;
+    height: 210px;
+    background: #2C2627;
+    border-radius: 25px;
+    left: 916px;
+    top: 454px;
+}
+
+.skills div h3{
+    position: absolute;
+    margin: 0;
+    width: 200px;
+    height: 24px;
+    left: 31px;
+    top: 104px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F5E4D7;
+}
+.skills div h5{
+    position: absolute;
+    margin: 0;
+    text-align: left;
+    width: 300px;
+    height: 36px;
+    left: 31px;
+    top: 144px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.services .down_button{
+    position: absolute;
+    left: 669.5px;
+    top: 711px;
+}
+
+/*Contact*/
+
+.contact h2{
+    position: absolute;
+    width: 984px;
+    height: 86px;
+    left: 228px;
+    top: 28px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 135%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.contact h4{
+    position: absolute;
+    width: 620px;
+    height: 126px;
+    left: 407px;
+    top: 142px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 135%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.name, .email, .phone, textarea{
+    font: inherit;
+    background: transparent;
+    color: currentColor;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    text-align: inherit;
+    box-sizing: content-box;
+}
+.service{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    text-align: inherit;
+    box-sizing: content-box;
+}
+input[type=text]{
+    position: absolute;
+    width: 372px;
+    height: 30px;
+    left: 337px;
+    top: 327px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F5E4D7;
+}
+input[type=tel]{
+    position: absolute;
+    width: 372px;
+    height: 30px;
+    left: 337px;
+    top: 421px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F5E4D7;
+}
+input[type=email]{
+    position: absolute;
+    width: 372px;
+    height: 30px;
+    left: 730px;
+    top: 327px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F5E4D7;
+}
+select{
+    position: absolute;
+    width: 372px;
+    height: 30px;
+    left: 730px;
+    top: 421px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #757570;
+    border: #2C2627;
+}
+textarea{
+    position: absolute;
+    width: 766px;
+    height: 118px;
+    left: 337px;
+    top: 518px;
+    resize: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F5E4D7;
+}
+.submit{
+    position: absolute;
+    width: 152px;
+    height: 51px;
+    left: 644px;
+    top: 721px;
+    background: #028979;
+    box-shadow: 0px 0px 15px #028979;
+    border-radius: 60px;
+}
+input[type=submit]{
+    cursor: pointer;
+    font-family: 'Montserrat';
+    border: none;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    color: #F5E4D7;
+    text-decoration: none;
+    
+}
