@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="atmstyle.css">
+    <link rel="stylesheet" href="news_page.css">
     <link rel="icon" type="image/png" href="">
     <title>Imad Ben Moussa</title>
     <!-- <script>
@@ -20,7 +21,7 @@
             var $navbar = $('.header');
             $(window).scroll(function(event){
                 var $current = $(this).scrollTop();
-                if($current > 3420){
+                if($current > 2481){
                     $navbar.addClass('navbar-color');
                 } else{
                     $navbar.removeClass('navbar-color');
@@ -46,7 +47,7 @@
 			<a href="Home Page.html"><h1>Imad<br>BEN MOUSSA</h1></a>
 			<ul type="none">
 				<li id="text"><a class="menu" href="#Hero">Home</a></li>
-				<li><a class="menu" href="#About">About</a></li>
+				<li><a class="menu" href="Home Page.html">About</a></li>
 				<li><a class="menu" href="#Portfolio">Portfolio</a></li>
 				<li><a class="menu" href="#Services">Services</a></li>
                 <li><a class="menu" href="#contact">Contact</a></li>
@@ -83,22 +84,92 @@
             <a href="#contact"><p>Contact</p></a>
        </div>
     </aside>-->
-    <section class="Description" id="Description">
-
-    </section>
-    <section class="chapters" id="chapters">
-
-    </section>
     <section class="video" id="video">
         <div>
-            <h2>Video Presentation</h2>
+            <h2>UN SYSTÈME DE ATM</h2>
             <div class="line"></div>
             <h5>Permettez-moi de vous présenter une vidéo captivante qui explique en détail toutes les fonctionnalités et les avantages de ce site web exceptionnel.</h5>
         </div>
         <div>
             <video controls width="970">
-            <source src="video/bandicam 2023-05-28 15-53-48-350.mp4" type="video/mp4">
+            <source src="video/news1.mp4" type="video/mp4">
             </video>
+        </div>
+        <div>
+            <a href="#Description">
+                <button class="down_button" type="button">
+                    <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.2682 2.132C25.2682 2.67107 25.0696 3.21014 24.644 3.63572L14.6287 13.6511C14.2282 14.0468 13.6879 14.2687 13.1249 14.2687C12.5619 14.2687 12.0217 14.0468 11.6212 13.6511L1.60586 3.63573C0.783071 2.81294 0.783071 1.45107 1.60586 0.628283C2.42865 -0.194508 3.79051 -0.194508 4.6133 0.628283L13.1249 9.13991L21.6366 0.628282C22.4594 -0.194509 23.8212 -0.194509 24.644 0.628282C24.847 0.821694 25.0073 1.05534 25.1148 1.31427C25.2223 1.5732 25.2745 1.85172 25.2682 2.132Z" fill="#F5E4D7"/>
+                    </svg>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="Description" id="Description">
+        <article>
+            <div>
+                <h2>Technologies utilisees</h2>
+                <ul>
+                    <li>Langage C</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Description</h2>
+                <p>
+                    C'est un programme réalisé en C. Le programme doit permettre à l'utilisateur de saisir un d'identification unique, tel qu'un numéro de compte, un identifiant de carte ou un mot de passe, pour accéder à ses informations de compte. Le programme doit permettre à l'utilisateur de vérifier son solde de bancaire en affichant le solde actuel sur l'écran. Le programme doit permettre à l'utilisateur de retirer une somme d'argentifique de son compte, en fonction de son solde disponible. Le programme doit permettre à l'utilisateur de déposer de l'argent sur son compte en saisissant le montant du dépôt et en le créditant sur le solde disponible. Le programme doit permettre à l'utilisateur de transférer de l'argent d'un compte à un autre, soit entre ses propres comptes, soit vers le compte d'un tiers. Le programme doit permettre à l'utilisateur de changer son code PIN ou son mot de passe pour assurer la sécurité de ses informations de compte.
+                </p>
+            </div>
+
+            <div>
+                <h2>Fonctionnalités</h2>
+                <ul>
+                    <li class="sans">Espace utilisateur</li>
+                    <li>Identification de l'utilisateur</li>
+                    <li>Vérification du solde </li>
+                    <li>Retrait d'argent</li>
+                    <li>Dépôt d'argent</li>
+                    <li>Virement de fonds  </li>
+                    <li>Changement de code PIN</li>
+                    <li class="sans">Espace admin</li>
+                    <li>Creation des comptes</li>
+                    <li>Modification des comptes</li>
+                    <li>Suppression des comptes</li>
+                    <li>Affichage des fichiers</li>
+                    
+                </ul>
+            </div>
+        </article>
+        <div>
+            <a href="#screens">
+                <button class="down_button" type="button">
+                    <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.2682 2.132C25.2682 2.67107 25.0696 3.21014 24.644 3.63572L14.6287 13.6511C14.2282 14.0468 13.6879 14.2687 13.1249 14.2687C12.5619 14.2687 12.0217 14.0468 11.6212 13.6511L1.60586 3.63573C0.783071 2.81294 0.783071 1.45107 1.60586 0.628283C2.42865 -0.194508 3.79051 -0.194508 4.6133 0.628283L13.1249 9.13991L21.6366 0.628282C22.4594 -0.194509 23.8212 -0.194509 24.644 0.628282C24.847 0.821694 25.0073 1.05534 25.1148 1.31427C25.2223 1.5732 25.2745 1.85172 25.2682 2.132Z" fill="#F5E4D7"/>
+                    </svg>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="screens" id="Reviews">
+        <div class="pictures">
+            <div>
+                <img src="Images/news/1.png">
+            </div>
+            <div>
+                <img src="Images/news/2.png">
+            </div>
+            <div>
+                <img src="Images/news/3.png">
+            </div>
+            <div>
+                <img src="Images/news/4.png">
+            </div>
+            <div>
+                <img src="Images/news/5.png">
+            </div>
+            <div>
+                <img src="Images/news/6.png">
+            </div>
         </div>
         <div>
             <a href="#contact">

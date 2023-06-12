@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atmstyle.css">
+    <link rel="stylesheet" href="atm_pages.css">
+    <link rel="icon" type="image/png" href="">
+    <title>Imad Ben Moussa</title>
+    <!-- <script>
+        function changerCol(){
+            var colArea = 
+
+            document.body.style.abckgroundColor = colArea;
+        } 
+    </script>-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        jQuery(function($){
+            var $navbar = $('.header');
+            $(window).scroll(function(event){
+                var $current = $(this).scrollTop();
+                if($current > 2481){
+                    $navbar.addClass('navbar-color');
+                } else{
+                    $navbar.removeClass('navbar-color');
+                }
+            });
+        });
+        jQuery(function($){
+            var $navbar = $('.menu');
+            $(window).scroll(function(event){
+                var $current = $(this).scrollTop();
+                if($current > 3420){
+                    $navbar.addClass('menu-color');
+                } else{
+                    $navbar.removeClass('menu-color');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav>
+			<a href="Home Page.html"><h1>Imad<br>BEN MOUSSA</h1></a>
+			<ul type="none">
+				<li id="text"><a class="menu" href="#Hero">Home</a></li>
+				<li><a class="menu" href="Home Page.html">About</a></li>
+				<li><a class="menu" href="#Portfolio">Portfolio</a></li>
+				<li><a class="menu" href="#Services">Services</a></li>
+                <li><a class="menu" href="#contact">Contact</a></li>
+			</ul>
+            <a href="Dark Mode.html"><button type="button" class="dark_mode">                                               
+                <div class="circle_border">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0280558 11.9433C0.399773 17.3494 4.91201 21.7478 10.3122 21.9892C14.1223 22.1571 17.5 20.5 19.5 18C23 13 19.9666 15.5648 18.552 15.8273C17.8602 15.9532 17.1477 16.0057 16.4043 15.9742C11.3551 15.7643 7.22491 11.4709 7.20426 6.40069C7.19394 5.03604 7.47272 3.74487 7.97867 2.56917C8.53625 1.26751 11 -0.939746 6.50001 0.999982C2.50002 2.72418 -0.311868 6.99998 0.0280558 11.9433Z" fill="#F5E4D7"/>
+                    </svg>                        
+                </div>               
+            </button></a>
+            <a href="Color changer.html"><button type="button" class="color_changer" id="color_changer">
+                <div class="circle_border">
+                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.1733 6.65065C22.5733 7.27732 22.36 8.11732 21.72 8.50399L20.9333 8.97065L3.45332 19.4507C2.81332 19.8373 1.97332 19.624 1.59999 18.9707C0.266652 16.6507 -0.333347 13.824 0.186653 10.864C1.06665 5.83732 5.19999 1.83732 10.2533 1.11732C12.563 0.780908 14.9207 1.12515 17.0378 2.10791C19.1549 3.09068 20.9395 4.66933 22.1733 6.65065ZM23.8533 14.9067C22.9467 20.5733 17.9333 24.9067 12.1867 25C9.65332 25.04 7.30665 24.3067 5.35999 22.9867C4.53332 22.44 4.55999 21.2133 5.41332 20.7067L21.96 10.9867C22.8267 10.48 23.8933 11.0667 23.9733 12.0667C24.04 13 24 13.9467 23.8533 14.9067Z" fill="#F5E4D7"/>
+                </svg>
+                </div>                           
+            </button></a>
+		</nav>
+    </header>
+    <!--<aside>
+        <div>
+             <div class="menu_switcher">
+                <svg width="106" height="103" viewBox="0 0 106 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M106 51C106 76.9574 106 74 106 103C106 62 0 93 0 51C0 8.99999 106 41 106 0C106 21.5 106 25.0426 106 51Z" fill="#028979"/>
+                </svg>                                                                                
+             </div>
+        </div>
+       <div>
+            <a href="#Hero"><p>Home</p></a>
+            <a href="#About"><p>About</p></a>
+            <a href="#Portfolio"><p>Portfolio</p></a>
+            <a href="#Services"><p>Services</p></a>
+            <a href="#contact"><p>Contact</p></a>
+       </div>
+    </aside>-->
+    <section class="video" id="video">
+        <div>
+            <h2>UN SYSTÈME DE ATM</h2>
+            <div class="line"></div>
+            <h5>Permettez-moi de vous présenter une vidéo captivante qui explique en détail toutes les fonctionnalités et les avantages de ce site web exceptionnel.</h5>
+        </div>
+        <div>
+            <video controls width="970">
+            <source src="video/atm1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <a href="#Description">
+                <button class="down_button" type="button">
+                    <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.2682 2.132C25.2682 2.67107 25.0696 3.21014 24.644 3.63572L14.6287 13.6511C14.2282 14.0468 13.6879 14.2687 13.1249 14.2687C12.5619 14.2687 12.0217 14.0468 11.6212 13.6511L1.60586 3.63573C0.783071 2.81294 0.783071 1.45107 1.60586 0.628283C2.42865 -0.194508 3.79051 -0.194508 4.6133 0.628283L13.1249 9.13991L21.6366 0.628282C22.4594 -0.194509 23.8212 -0.194509 24.644 0.628282C24.847 0.821694 25.0073 1.05534 25.1148 1.31427C25.2223 1.5732 25.2745 1.85172 25.2682 2.132Z" fill="#F5E4D7"/>
+                    </svg>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="Description" id="Description">
+        <article>
+            <div>
+                <h2>Technologies utilisees</h2>
+                <ul>
+                    <li>Langage C</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Description</h2>
+                <p>
+                    C'est un programme réalisé en C. Le programme doit permettre à l'utilisateur de saisir un d'identification unique, tel qu'un numéro de compte, un identifiant de carte ou un mot de passe, pour accéder à ses informations de compte. Le programme doit permettre à l'utilisateur de vérifier son solde de bancaire en affichant le solde actuel sur l'écran. Le programme doit permettre à l'utilisateur de retirer une somme d'argentifique de son compte, en fonction de son solde disponible. Le programme doit permettre à l'utilisateur de déposer de l'argent sur son compte en saisissant le montant du dépôt et en le créditant sur le solde disponible. Le programme doit permettre à l'utilisateur de transférer de l'argent d'un compte à un autre, soit entre ses propres comptes, soit vers le compte d'un tiers. Le programme doit permettre à l'utilisateur de changer son code PIN ou son mot de passe pour assurer la sécurité de ses informations de compte.
+                </p>
+            </div>
+
+            <div>
+                <h2>Fonctionnalités</h2>
+                <ul>
+                    <li class="sans">Espace utilisateur</li>
+                    <li>Identification de l'utilisateur</li>
+                    <li>Vérification du solde </li>
+                    <li>Retrait d'argent</li>
+                    <li>Dépôt d'argent</li>
+                    <li>Virement de fonds  </li>
+                    <li>Changement de code PIN</li>
+                    <li class="sans">Espace admin</li>
+                    <li>Creation des comptes</li>
+                    <li>Modification des comptes</li>
+                    <li>Suppression des comptes</li>
+                    <li>Affichage des fichiers</li>
+                    
+                </ul>
+            </div>
+        </article>
+        <div>
+            <a href="#screens">
+                <button class="down_button" type="button">
+                    <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.2682 2.132C25.2682 2.67107 25.0696 3.21014 24.644 3.63572L14.6287 13.6511C14.2282 14.0468 13.6879 14.2687 13.1249 14.2687C12.5619 14.2687 12.0217 14.0468 11.6212 13.6511L1.60586 3.63573C0.783071 2.81294 0.783071 1.45107 1.60586 0.628283C2.42865 -0.194508 3.79051 -0.194508 4.6133 0.628283L13.1249 9.13991L21.6366 0.628282C22.4594 -0.194509 23.8212 -0.194509 24.644 0.628282C24.847 0.821694 25.0073 1.05534 25.1148 1.31427C25.2223 1.5732 25.2745 1.85172 25.2682 2.132Z" fill="#F5E4D7"/>
+                    </svg>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="screens" id="Reviews">
+        <div class="pictures">
+            <div>
+                <img src="Images/atm/affichage.png">
+            </div>
+            <div>
+                <img src="Images/atm/consulter.png">
+            </div>
+            <div>
+                <img src="Images/atm/escape.png">
+            </div>
+            <div>
+                <img src="Images/atm/escape utilisateur.png">
+            </div>
+            <div>
+                <img src="Images/atm/creer compte.png">
+            </div>
+            <div>
+                <img src="Images/atm/service.png">
+            </div>
+        </div>
+        <div>
+            <a href="#contact">
+                <button class="down_button" type="button">
+                    <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.2682 2.132C25.2682 2.67107 25.0696 3.21014 24.644 3.63572L14.6287 13.6511C14.2282 14.0468 13.6879 14.2687 13.1249 14.2687C12.5619 14.2687 12.0217 14.0468 11.6212 13.6511L1.60586 3.63573C0.783071 2.81294 0.783071 1.45107 1.60586 0.628283C2.42865 -0.194508 3.79051 -0.194508 4.6133 0.628283L13.1249 9.13991L21.6366 0.628282C22.4594 -0.194509 23.8212 -0.194509 24.644 0.628282C24.847 0.821694 25.0073 1.05534 25.1148 1.31427C25.2223 1.5732 25.2745 1.85172 25.2682 2.132Z" fill="#F5E4D7"/>
+                    </svg>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div>
+            <h2>Thanks for taking the time to have a look at who
+                i am! Let’s Make something Great Together</h2>
+            <h4>I can’t wait to speak to you about your project and
+                help your business stand out from the
+                competition</h4>
+        </div>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="name"></label>
+              <input type="text" class="name" name="name" placeholder="Your Name..*">
+              <div class="linee1"></div>
+          
+              <label for="email"></label>
+              <input type="email" class="email" name="email" placeholder="Email*">
+              <div class="linee2"></div>
+          
+              <label for="phone"></label>
+              <input type="tel" class="phone" name="phone" placeholder="Phone*">
+              <div class="linee3"></div>
+          
+              <label for="service"></label>
+              <select class="service" name="service" placeholder="choose a service*">
+                <option value="Logo & Branding">Logo & Branding</option>
+                <option value="Mobile App Design">Mobile App Design</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Front End">Front End</option>
+              </select>
+              <div class="linee4"></div>
+          
+              <label for="Message"></label>
+              <textarea class="message" id="message" name="Message" placeholder="Message*" style="height:200px"></textarea>
+              <div class="linee5"></div>
+              <p>max 1000 characters</p>
+
+                <div>
+                    <input class="submit" type="submit" value="let’s go">
+                </div>
+            </form>
+          </div>
+    </section>
+    <section class="copyright" id="Reviews">
+        <div>
+            <div class="line"></div>
+            <a href="Home Page.html"><h1>Imad<br>BEN MOUSSA</h1></a>
+            <p>About | Portfolio | Contact / +212684061227 / contact@imadbenmoussa.com</p>
+        </div>
+        <div class="social">
+            <a class="instagramm" href="https://www.instagram.com">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="1.45652" width="38.6522" height="38.6522" rx="6.5" stroke="#BC2C3D"/>
+                <rect x="2.08694" y="3.04348" width="35.4783" height="35.4783" rx="7" fill="#B03C4A"/>
+                <path d="M16.6956 31.2174H22.9565C28.1739 31.2174 30.2609 29.1304 30.2609 23.913V17.6522C30.2609 12.4348 28.1739 10.3478 22.9565 10.3478H16.6956C11.4783 10.3478 9.3913 12.4348 9.3913 17.6522V23.913C9.3913 29.1304 11.4783 31.2174 16.6956 31.2174Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.8261 24.4348C20.3057 24.4348 20.7806 24.3403 21.2237 24.1568C21.6668 23.9732 22.0694 23.7042 22.4086 23.3651C22.7477 23.026 23.0167 22.6233 23.2003 22.1802C23.3838 21.7371 23.4783 21.2622 23.4783 20.7826C23.4783 20.303 23.3838 19.8281 23.2003 19.385C23.0167 18.9419 22.7477 18.5393 22.4086 18.2001C22.0694 17.861 21.6668 17.592 21.2237 17.4084C20.7806 17.2249 20.3057 17.1304 19.8261 17.1304C18.8575 17.1304 17.9285 17.5152 17.2436 18.2001C16.5587 18.8851 16.1739 19.814 16.1739 20.7826C16.1739 21.7512 16.5587 22.6802 17.2436 23.3651C17.9285 24.05 18.8575 24.4348 19.8261 24.4348Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.7071 15.5652H25.7191" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a class="linkedinn" href="https://www.linkedin.com">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1.45652" width="38.6522" height="38.6522" rx="6.5" stroke="#BC2C3D"/>
+                    <rect x="2.08698" y="3.04348" width="35.4783" height="35.4783" rx="7" fill="#B03C4A"/>
+                    <path d="M12.7798 11.3913C11.3141 11.3913 10.4348 12.297 10.4348 13.5031C10.4348 14.7091 11.3142 15.6114 12.6329 15.6114C14.0986 15.6114 14.9779 14.7091 14.9779 13.5031C14.9779 12.297 14.0985 11.3913 12.7798 11.3913ZM10.5517 17.8674V30.1739H14.8677V17.8674H10.5517ZM18.4287 17.8674V30.1739H22.7447V23.4472C22.7447 21.4447 24.1346 21.1569 24.5519 21.1569C24.9692 21.1569 26.0852 21.5871 26.0852 23.4472V30.1739H30.2609V23.4472C30.2609 19.5847 28.5911 17.8674 26.5028 17.8674C24.4144 17.8674 23.3005 18.5821 22.7447 19.5842V17.8674H18.4287Z" fill="white"/>
+                    </svg>                        
+            </a>
+            <a class="facebookk" href="https://www.facebook.com">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1.45652" width="38.6522" height="38.6522" rx="6.5" stroke="#BC2C3D"/>
+                    <rect x="2.08698" y="3.04348" width="35.4783" height="35.4783" rx="7" fill="#B03C4A"/>
+                    <path d="M21.913 17.9652V20.9913H24.6261C24.8348 20.9913 24.9391 21.2 24.9391 21.4087L24.5217 23.3913C24.5217 23.4957 24.313 23.6 24.2087 23.6H21.913V31.2174H18.7826V23.7044H17.0087C16.8 23.7044 16.6956 23.6 16.6956 23.3913V21.4087C16.6956 21.2 16.8 21.0957 17.0087 21.0957H18.7826V17.6522C18.7826 15.8783 20.1391 14.5217 21.913 14.5217H24.7304C24.9391 14.5217 25.0435 14.6261 25.0435 14.8348V17.3391C25.0435 17.5478 24.9391 17.6522 24.7304 17.6522H22.2261C22.0174 17.6522 21.913 17.7565 21.913 17.9652Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M22.9565 31.2174H16.6956C11.4783 31.2174 9.3913 29.1304 9.3913 23.913V17.6522C9.3913 12.4348 11.4783 10.3478 16.6956 10.3478H22.9565C28.1739 10.3478 30.2609 12.4348 30.2609 17.6522V23.913C30.2609 29.1304 28.1739 31.2174 22.9565 31.2174Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </a>
+            <a class="behancee" href="https://www.behance.net">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1.45652" width="38.6522" height="38.6522" rx="6.5" stroke="#BC2C3D"/>
+                    <rect x="2.08694" y="3.04348" width="35.4783" height="35.4783" rx="7" fill="#B03C4A"/>
+                    <path d="M9.39127 20.7826H16.6956C18.4695 20.7826 19.826 22.1391 19.826 23.913C19.826 25.687 18.4695 27.0435 16.6956 27.0435H10.4347C9.80866 27.0435 9.39127 26.6261 9.39127 26V15.5652C9.39127 14.9391 9.80866 14.5217 10.4347 14.5217H15.6521C17.426 14.5217 18.7826 15.8783 18.7826 17.6522C18.7826 19.4261 17.426 20.7826 15.6521 20.7826H9.39127Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                    <path d="M21.913 22.8696H30.2609C30.2609 20.5739 28.3826 18.6957 26.0869 18.6957C23.7913 18.6957 21.913 20.5739 21.913 22.8696ZM21.913 22.8696C21.913 25.1652 23.7913 27.0435 26.0869 27.0435H27.8609M27.6522 16.087H24.5217" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </a>
+            <a class="dribbblee" href="https://www.dribbble.com">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2.08694" y="3.04348" width="35.4783" height="35.4783" rx="7" fill="#B03C4A"/>
+                    <rect x="0.5" y="1.45652" width="38.6522" height="38.6522" rx="6.5" stroke="#BC2C3D"/>
+                    <path d="M26.6087 13.2591C23.8956 18.007 18.6678 20.7304 13.2209 20.24L9.91302 19.9374M13.0435 28.473C15.7565 23.7252 20.9843 21.0017 26.4313 21.4922L29.7391 21.7948" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.826 31.2174C25.5892 31.2174 30.2608 26.5457 30.2608 20.7826C30.2608 15.0195 25.5892 10.3478 19.826 10.3478C14.0629 10.3478 9.39127 15.0195 9.39127 20.7826C9.39127 26.5457 14.0629 31.2174 19.826 31.2174Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.2661 11.3913L18.5843 15.513C20.8069 18.2678 22.3826 21.4713 23.2174 24.9043L24.48 30.1113" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </a>
+        </div>
+        <div class="copy_right">
+            <div class="line"></div>
+           <h3>Copyright © 2023 BEN MOUSSA IMAD | All rights reserved</h3> 
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

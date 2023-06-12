@@ -229,9 +229,9 @@ aside div a:last-child p{
 }*/
 
 /*Hero Section*/
-section{
+.Hero{
     position: relative;
-    height: 800px;
+    height: 715px;
     margin-bottom: 50px;
 }
 
@@ -412,13 +412,18 @@ section{
 }
 
 /*About*/
+.About{
+    position: relative;
+    height: 770px;
+    margin-bottom: 50px;
+}
 .About h3{
     position: absolute;
     margin: 0;
     width: 152px;
     height: 37px;
     left: 80px;
-    top: 199px;
+    top: 131px;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 30px;
@@ -428,10 +433,10 @@ section{
 .About p{
     position: absolute;
     margin: 0;
-    width: 603px;
+    width: 700px;
     height: 325px;
     left: 80px;
-    top: 261px;
+    top: 193px;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 16px;
@@ -444,7 +449,7 @@ section{
     width: 368px;
     height: 490px;
     left: 946px;
-    top: 174.52px;
+    top: 106.52px;
     background: #BC2C3D;
     border-radius: 18px;
 }
@@ -453,7 +458,7 @@ section{
     width: 368px;
     height: 490px;
     left: 889px;
-    top: 143px;
+    top: 75px;
     background-color: #2C2627;
     box-shadow: 39px 28px 29px 9px rgba(0, 0, 0, 0.32);
     border-radius: 18px;
@@ -464,7 +469,7 @@ section{
     width: 159px;
     height: 54px;
     left: 80px;
-    top: 611px;
+    top: 543px;
     border: 1px solid #BC2C3D;
     background: #BC2C3D;
     box-shadow: 0px 0px 15px #BC2C3D;
@@ -483,10 +488,15 @@ section{
 
 .About .down_button{
     position: absolute;
-    top: 651px;
+    top: 665px;
 }
 
 /*Portfolio*/
+.Portfolio{
+    position: relative;
+    height: 800px;
+    margin-bottom: 50px;
+}
 .Portfolio h1{
     position: absolute;
     margin: 0;
@@ -689,6 +699,11 @@ section{
 }
 
 /* Services */
+.services{
+    position: relative;
+    height: 800px;
+    margin-bottom: 50px;
+}
 .services h2{
     position: absolute;
     margin: 0;
@@ -813,7 +828,11 @@ section{
 }
 
 /*Contact*/
-
+.contact{
+    position: relative;
+    height: 800px;
+    margin-bottom: 50px;
+}
 .contact h2{
     position: absolute;
     width: 984px;
@@ -993,6 +1012,11 @@ input[type=submit]{
 }
 
 /*copyright*/
+.copyright{
+    position: relative;
+    height: 800px;
+    margin-bottom: 50px;
+}
 .copyright .line{
     position: absolute;
     width: 100px;
